@@ -4,11 +4,10 @@ This is a customised version of the camel spring boot example - https://github.c
 
 I'm currently starting the application directly in Intellij (by running CamelSpringBootApplication)
 
-Because actuator dependencies have been added in the POM, you can get camel stats by visiting
+Because actuator dependencies have been added in the POM, you can get general stats by visiting
 
      http://localhost:8080/actuator/health
 
-TODO:
+You can get camel specific stats by visiting
 
-Read about overridding config (sys properties)
-What's a route group?
+     http://localhost:8080/actuator/camelroutes

@@ -10,6 +10,7 @@ public class MyRoute extends RouteBuilder {
     public void configure() {
         from("timer:hello?period={{timer.period}}")
                 .routeId("hello")
+                .routeGroup("testRoutes")
                 .log("Hi");
     }
 
