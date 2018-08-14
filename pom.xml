@@ -74,6 +74,8 @@
         </dependency>
 
 		<!-- no longer shipped in Java 10 (can enable via add-module jdk command if required) -->
+        <!-- The camel spring boot example has a nice solution for this using a profile that's auto
+             enabled depending on the JDK version -->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
