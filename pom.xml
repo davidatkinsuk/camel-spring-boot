@@ -60,6 +60,19 @@
 			<scope>test</scope>
 		</dependency>
 
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-stream-starter</artifactId>
+            <version>2.22.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-test</artifactId>
+            <version>2.22.0</version>
+            <scope>test</scope>
+        </dependency>
+
 		<!-- no longer shipped in Java 10 (can enable via add-module jdk command if required) -->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>

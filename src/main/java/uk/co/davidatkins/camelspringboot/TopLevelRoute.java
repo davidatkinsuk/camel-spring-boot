@@ -4,14 +4,15 @@ import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MyRoute extends RouteBuilder {
+public class TopLevelRoute extends RouteBuilder {
 
     @Override
     public void configure() {
         from("timer:hello?period={{timer.period}}")
-                .routeId("hello")
+                .routeId("topLevel")
                 .routeGroup("testRoutes")
-                .log("Hi");
+                .setBody(constant("hello there"))
+                .to("direct:logging");
     }
 
 }
